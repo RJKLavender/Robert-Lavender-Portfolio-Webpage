@@ -1,11 +1,16 @@
 //Fonts and Icon set up
-//I use fontface mixins for the poppins fonts
+//I use fontface mixins for the encode sans fonts
 
-//Poppins fonts
-//@include font-face('', ,900);
-
-//italic Poppins fonts
-//@include font-face-italic('', ,900, italic);
+//Encode Sans fonts
+@include font-face('Encode Sans',EncodeSans-Black,900);
+@include font-face('Encode Sans',EncodeSans-ExtraBold ,800);
+@include font-face('Encode Sans',EncodeSans-Bold ,700);
+@include font-face('Encode Sans',EncodeSans-SemiBold ,600);
+@include font-face('Encode Sans',EncodeSans-Medium ,500);
+@include font-face('Encode Sans',EncodeSans-Regular ,400);
+@include font-face('Encode Sans',EncodeSans-Light ,300);
+@include font-face('Encode Sans',EncodeSans-ExtraLight ,200);
+@include font-face('Encode Sans',EncodeSans-Thin ,100);
 
 //icomoon font-face function
 @font-face {
@@ -29,3 +34,28 @@
 }
 
 //icon fonts classes and codes
+
+.icon-keyboard_arrow_down:before {
+  content: "\e901";
+}
+.icon-keyboard_arrow_up:before {
+  content: "\e902";
+}
+.icon-x:before {
+  content: "\e900";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-arrow-right:before {
+  content: "\ea3c";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-linkedin:before {
+  content: "\eaca";
+}

@@ -9,133 +9,161 @@
 </head>
 <body>
 
-<header>
-    <div>
-        <!--hero image header-->
-        <h2>My Name is Robert Lavender</h2>
-    </div>
-    <div>
-        <a href="#">Scroll down</a>
-    </div>
-</header>
-
-<aside>
-    <div>
+<aside class="sidebar">
+    <div class="menu">
         <!--dropdown menu-->
         <button type="button"><span></span></button>
     </div>
-    <div>
+    <div class="intials">
         <!--intials-->
         <h1><a href="index.html">RL</a></h1>
     </div>
-    <nav>
+    <!--Navigation links-->
+    <nav class="sidenav">
         <ul>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">My Portflio</a></li>
-            <li><a href="#">coding examples</a></li>
-            <li><a href="#">SCS Scheme</a></li>
+            <li><a href="/webpages/aboutme.html">About Me</a></li>
+            <li><a href="index.html#portfolio">My Portfolio</a></li>
+            <li><a href="/webpages/codingexamples.html">coding examples</a></li>
+            <li><a href="/webpages/scsscheme.html">SCS Scheme</a></li>
         </ul>
         <div>
-            <a><span>Contact Me</span></a>
+            <a href="index.html#contactme"><span>Contact Me</span></a>
         </div>
-        <div>
+        <!--socials-->
+        <div class="socials">
             <ul>
-                <li><a href="#"><span></span></a></li>
-                <li><a href="#"><span></span></a></li>
-                <li><a href="#"><span></span></a></li>
-                <li><a href="#"><span></span></a></li>
+                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                <li><a href="#"><span class="icon-x"></span></a></li>
+                <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                <li><a href="#"><span class="icon-instagram"></span></a></li>
+                <li><a href="a"><span></span></a></li>
             </ul>
-            <!--socials-->
         </div>
     </nav>
 </aside>
-
-<main>
-    <div>
-        <div>
-
+<div class="main">
+    <header>
+    <div class="top"></div>
+    <div class="Headerimg overlayheader">
+        <div class="headertext">
+        <!--hero image header-->
+        <h2>My Name is Robert Lavender</h2>
+        <h4>I'm a web developer</h4>
         </div>
-        <div>
+    <div class="scrolllink">
+        <a href="#portfolio">Scroll Down<span class="icon-keyboard_arrow_down"></span></a>
+    </div>
+    </div>
+    </header>
+
+<div class="my-projects">   
+    <div class="portfolio"></div>
+    <div class="projects">
+        <!--project1-->
+    <div class="projectbox">
+         
+        <div class="projectimg overlayproject">
+        </div>
+        <div class="projectlabel"></div>
+        <div class="projectinfo">
             <h2>Project One</h2>
-            <a href="#">View Project<em></em></a>
-        </div><!--project1-->
-    </div>
-
-    <div>
-        <div>
-
+            <p>Project Info to be added</p>
+            <a class="btn-project" href="#">View Project<em class="icon-arrow-right"></em></a>
         </div>
-        <div>
+        
+    </div>
+    <!--project2-->
+    <div class="projectbox">
+        <div class="projectimg overlayproject">
+            <h2>Place Holder Project</h2>
+        </div>
+        <div class="projectinfo">
             <h2>Project Two</h2>
-            <a href="#">View Project<em></em></a>
-        </div><!--project1-->
-        <!--project2-->
-    </div>
-    <div>
-        <div>
-
+            <p>Project Info to be added</p>
+            <a class="btn-project" href="#">View Project<em class="icon-arrow-right"></em></a>
         </div>
-        <div>
-            <h2>Project Three</h2>
-            <a href="#">View Project<em></em></a>
-        </div><!--project1-->
         <!--project3-->
     </div>
-    <div>
-        <div>
-
+    <div class="projectbox">
+        <div class="projectimg overlayproject">
+            <h2>Place Holder Project</h2>
         </div>
-        <div>
-            <h2>Project Four</h2>
-            <a href="#">View Project<em></em></a>
-        </div><!--project1-->
+        <div class="projectinfo">
+            <h2>Project Three</h2>
+            <p>Project Info to be added</p>
+            <a class="btn-project" href="#">View Project<em class="icon-arrow-right"></em></a>
+        </div>
         <!--project4-->
     </div>
-    <div>
-        <div>
-
+    <div class="projectbox">
+        <div class="projectimg overlayproject">
+            <h2>Place Holder Project</h2>
         </div>
-        <div>
-            <h2>Project Five</h2>
-            <a href="#">View Project<em></em></a>
-        </div><!--project1-->
+        <div class="projectinfo">
+            <h2>Project Four</h2>
+            <p>Project Info to be added</p>
+            <a class="btn-project" href="#">View Project<em class="icon-arrow-right"></em></a>
+        </div>
         <!--project5-->
     </div>
-    <div>
-        <div>
-
+    <div class="projectbox">
+        <div class="projectimg overlayproject">
+            <h2>Place Holder Project</h2>
         </div>
-        <div>
-            <h2>Project Six</h2>
-            <a href="#">View Project<em></em></a>
-        </div><!--project1-->
+        <div class="projectinfo">
+            <h2>Project Five</h2>
+            <p>Project Info to be added</p>
+            <a class="btn-project" href="#">View Project<em class="icon-arrow-right"></em></a>
+        </div>
         <!--project6-->
     </div>
-</main>
-
-<footer>
-    <div>
-        <h2>Contact Me</h2>
-        <p>Email: <a href="#">robert.lavender@netmatters-scs.com</a></p>
-        <form>
-            <label for="forname">First Name*</label>
-            <input id="forname" class="forname" placeholder="First Name*" type="text">
-            <label for="surname">Last Name*</label>
-            <input id="surname" class=surname" placeholder="First Name*" type="text">
-            <label for="email">Email Address*</label>
-            <input id="email" class="email" placeholder="First Name*" type="email">
-            <label for="subject">Subject</label>
-            <input id="subject" class="subject" placeholder="First Name*" type="text">
-            <label for="message"></label> Message</label>
-            <textarea id="message" class="message" placeholder="First Name*"</textarea>
-            <button type="submit">Submit</button>
-        </form>
-        <!--contact form-->
+    <div class="projectbox">
+        <div class="projectimg overlayproject">
+            <h2>Place Holder Project</h2>
+        </div>
+        <div class="projectinfo">
+            <h2>Project Six</h2>
+            <p>Project Info to be added</p>
+            <a class="btn-project" href="#">View Project<em class="icon-arrow-right"></em></a>
+        </div>
     </div>
-    <div>
-        <a href="#">Back To Top</a>
+    </div>
+</div>
+
+<!--contact form-->
+<footer>
+    <div class="contactme">
+        <div class="contactdetails">
+        <h2>Contact Me</h2>
+        <p>
+            
+        </p>
+        <p>Email: <a href="#">robert.lavender@netmatters-scs.com</a></p>
+        <p>Contact Number: 07534913045</p>
+        </div>>
+        <div class="formbox">
+        <form class="contactme-form">
+            <label for="forname" class="hidden-label">First Name*</label>
+            <input id="forname" class="forname formtext" placeholder="First Name*" type="text">
+            <label for="surname" class="hidden-label">Last Name*</label>
+            <input id="surname" class="surname fortext" placeholder="Last Name*" type="text">
+            <label for="email" class="hidden-label">Email Address*</label>
+            <input id="email" class="email formtext" placeholder="Email Address*" type="email">
+            <label for="phone" class="hidden-label">Telephone Number*</label>
+             <input id="phone" class="phone formtext" placeholder="Telephone Number*" type="text">
+            <label for="subject" class="hidden-label">Subject</label>
+            <input id="subject" class="subject formtext" placeholder="Subject" type="text">
+            <label for="message" class="hidden-label">Message</label>
+            <textarea id="message" class="message messagetext" placeholder="Messege"</textarea>
+            <button type="submit" id="submit" class="btn-subtmit">Submit</button>
+        </form>
+        </div>
+        </div>
+    <div class="scrolllink">
+        <a href="#top"><span class="icon-keyboard_arrow_up"></span>Back To Top</a>
     </div>
 </footer>
+</div>
 
 </body>
 </html>
