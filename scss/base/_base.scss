@@ -1,11 +1,81 @@
-body {}
+body {
+    font-family: $encode, sans-serif;
+    font-size: $base-font-size;
+    line-height: ($base-line-height/$base-font-size); //line height calcuation for the base font outputs 1.5
+    font-weight: $font-reg;   
+}
+
 * {
+    box-sizing: border-box;
 }
 
 //elements
-p {}
-a {}
-h1 {}
-h2 {}
-h3 {}
-h4 {}
+a {
+    cursor: pointer;
+    text-decoration:none;
+}
+
+a:focus { 
+    outline: thin dotted;
+}
+
+//prevents useragent styling from overriding colour of links
+a:link, a:any-link, a:active, a:focus, a:visited {
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+input {
+    cursor: text;
+}
+
+p {
+    font-size: rem(16px);
+    line-height: rem(24px);
+    font-weight: $font-reg;   
+}
+
+h1, h2, h3, h4 {
+    font-weight: $font-semibold;
+    line-height: rem(20px)
+}
+
+h1 {
+    font-size: rem(38px);
+}
+
+h2 {
+    font-size: rem(32px);
+}
+
+h3 {
+    font-size: rem(26px);
+}
+
+h4 {
+    font-size: rem(20px);
+}
+
+p a:hover, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+strong {
+    font-weight: $font-semibold;
+}
+
+small {
+    font-weight: $font-light;
+}
+
+span, em {
+    font-weight: $font-med;
+}
