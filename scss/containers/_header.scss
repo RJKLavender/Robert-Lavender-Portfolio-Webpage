@@ -4,9 +4,10 @@ header {
         background-repeat: no-repeat;
         background-position: center;
         height: 100vh;
-        width: 100vw;
+        width: 100%;
         position: relative;
         color: $black;
+        
 
     .Headerimg {
         display: flex;
@@ -30,7 +31,7 @@ header {
     .scrolllink {
         position: absolute;
         bottom:0;
-        left:50%;
+        left:60%;
         transform: translate(-50%, 0);
         margin-bottom:10px;
 
@@ -41,16 +42,31 @@ header {
         a {
         display: flex;
         flex-direction:column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
         font-size: rem(25px);
         font-weight:600;
         color: $white;
+        padding: 10px 15px;
 
         span {
             font-size: rem(40px);
+            margin-top: 5px;
+        }
+        }
+        a:hover {
+            background-color: $darkred;
+            border-radius: 10px;
+
+            span {
+                padding: 0;
+                border: 1px solid $white;
+                border-radius: 50px;
+            }
         }
 
-    }
+    
 }
 }
 

@@ -1,9 +1,15 @@
 body {
+    margin: 0px;
+    padding: 0px;
     font-family: $encode, sans-serif;
     font-size: $base-font-size;
     line-height: ($base-line-height/$base-font-size); //line height calcuation for the base font outputs 1.5
     font-weight: $font-reg;   
 }
+
+.main {
+    margin-left: 250px;
+ }
 
 * {
     box-sizing: border-box;

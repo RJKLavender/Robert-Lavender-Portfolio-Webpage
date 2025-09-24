@@ -1,0 +1,85 @@
+.sidebar {
+    position:fixed;
+    top:0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: $darkgrey;
+    color: $offwhite;
+    border-right: 2px solid $border-red;
+
+
+    .sidenav-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap:20px;
+    
+    .intials {
+        padding:0 25px;
+        margin: 50px 0;
+
+        a {
+        font-size: 50px;
+        line-height: 1;
+        font-weight: $font-bold;
+        }
+
+        a:hover {
+            padding: 10px 10px;
+            background-color: $darkred;
+            border-radius: 10px;
+            }
+        
+    }
+    .nav {
+
+        display: flex;
+        flex-direction: column;
+        border-top: 2px solid $border-red;
+        border-bottom: 2px solid $border-red;
+
+        ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+        margin: 10px 0;
+        padding: 0 20px;
+
+            li { a {} }
+        }
+    }
+
+    .contactlink {
+        padding:10px 0;
+            a { span {} }
+    }
+
+        .socials {
+        border-top: 2px solid $border-red;
+
+            ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin:0;
+            padding:10px 0;
+
+            li {
+                 a { span {} } 
+                }
+    }
+}
+}
+}
+
+.menu {
+    display: none;
+    margin-top:0;
+    .btn-menu {span {} }
+}
+

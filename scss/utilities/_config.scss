@@ -3,6 +3,12 @@
 // Colours
 $white: #fff;
 $black: #000;
+$darkgrey: #2c2c2c;
+$offwhite: #fae7e4;
+$darkred: #950606;
+
+//Border Colors
+$border-red: hsl(0, 71%, 37%);
 
 //Break Points
 $extrasmall:576px;
@@ -34,6 +40,6 @@ $font-extrabold: 800;
 $font-black: 900;
 
 //font styles
-$font-italic: italic;
-$font-bold: bold;
-$font-underline: underline;
+$font-style-italic: italic;
+$font-style-bold: bold;
+$font-style-underline: underline;

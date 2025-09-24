@@ -35,27 +35,30 @@
 
 //icon fonts classes and codes
 
-.icon-keyboard_arrow_down:before {
+.icon-keyboard_arrow_down::before {
   content: "\e901";
 }
-.icon-keyboard_arrow_up:before {
+.icon-keyboard_arrow_up::before {
   content: "\e902";
 }
-.icon-x:before {
+.icon-x::before {
   content: "\e900";
 }
-.icon-menu:before {
+.icon-menu::before {
   content: "\e9bd";
 }
-.icon-arrow-right:before {
+.icon-arrow-right::before {
   content: "\ea3c";
 }
-.icon-facebook:before {
+.icon-facebook::before {
   content: "\ea90";
 }
-.icon-instagram:before {
+.icon-instagram::before {
   content: "\ea92";
 }
-.icon-linkedin:before {
+.icon-linkedin::before {
   content: "\eaca";
+}
+.icon-github-square::before {
+  content: "\f092";
 }
