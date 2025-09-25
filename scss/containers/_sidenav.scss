@@ -1,6 +1,6 @@
 .sidebar {
     position:fixed;
-    top:0;
+    top: 0;
     left: 0;
     width: 250px;
     height: 100%;
@@ -15,71 +15,101 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        gap:20px;
+        font-size: rem(20px);
+        line-height: 1;
+        font-weight: $font-semibold;
+        
     
     .intials {
         padding:0 25px;
         margin: 50px 0;
 
         a {
-        font-size: 50px;
-        line-height: 1;
+        font-size: rem(50px);
+        line-height: 1.5;
         font-weight: $font-bold;
+        display:block;
+        padding: 15px 15px;
+        position:relative;
+        @include lhCrop(1.5); 
+
         }
 
         a:hover {
-            padding: 10px 10px;
             background-color: $darkred;
             border-radius: 10px;
             }
         
     }
-    .nav {
-
+    .nav-bar {
         display: flex;
         flex-direction: column;
         border-top: 2px solid $border-red;
         border-bottom: 2px solid $border-red;
 
-        ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap:10px;
-        margin: 10px 0;
-        padding: 0 20px;
+        .nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap:25px;
+            margin: 10px 0;
+            padding: 10px 20px 0 20px;
+            margin: 15px 0;
 
-            li { a {} }
+           .navlink {
+                    padding: 10px;
+                }
+            .navlink:hover {
+            background-color: $darkred;
+            border-radius: 10px;
+            }
         }
     }
 
-    .contactlink {
-        padding:10px 0;
-            a { span {} }
-    }
-
-        .socials {
+    .contactnav {
+        padding:20px 0 10px;
+        margin: 10px 0;
         border-top: 2px solid $border-red;
+       
+        line-height: 1.2;
+            .contactlink {
+                padding: 10px;
+            }
+            .contactlink:hover {
+            background-color: $darkred;
+            border-radius: 10px;
+            }
+        }
+    
 
-            ul {
+        .social-media {
+        border-top: 2px solid $border-red;
+        padding:5px 0 5px;
+
+            .socials {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
             margin:0;
-            padding:10px 0;
+            padding:10px 5px;
 
-            li {
-                 a { span {} } 
-                }
+            .sociallink {
+                padding: 5px;
+                margin: 0 5px;
+            }
+
+            .sociallink:hover {
+                border: 1px solid $white;
+                border-radius: 50px;
+            }
+            }
+        }
     }
-}
-}
 }
 
 .menu {
     display: none;
     margin-top:0;
-    .btn-menu {span {} }
+    //.btn-menu {span {} }
 }
 
