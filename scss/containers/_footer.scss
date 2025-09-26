@@ -1,46 +1,104 @@
 footer {
-    margin: 10px 25%;
+    margin: 45px 15%;
+    width:900px;
     padding-inline: 15px;
     position:relative;
+    border: 2px solid $border-red;
+    border-radius: 5px;
+    background: linear-gradient(240deg, rgba(140, 140, 140, 0.4) 0.75%);
+    color: $verydarkgrey;
 
     .contactme {
         display: flex;
-        padding: 25px;
+        padding: 25px 15px;
         flex-direction: row;
+        gap: 20px;
 
         .contactdetails {
             display: flex;
              flex-direction: column;
-        h2 {}
-        p {}
+             width: 110%;
+             
+        h2 {
+            margin-bottom: 25px;
         }
+        p {
+            font-size: rem(16px);
+            line-height: rem(24px);
+            margin:0 40px 10px 0;
+        }
+        }
+
         .formbox {
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            flex-grow: 2;
+
         .contactme-form {
             display: flex;
             flex-direction: column;
-            gap:10px;
+            width: 100%;
+
             .name-wrapper {
                 display: flex;
                 flex-direction: row;
                 gap:10px;
+
+                .nametext {
+                    margin-top:0;
+                }
             }
             .hidden-label {
                 display:none;
             }
-            .formtext {}
-            .messagetext {}
-            .btn-subtmit {}
+
+            .formtext {
+                margin-top:20px;
+            }
+            
+            .messagetext {
+                margin-top:20px;
+                height: 100px;
+                min-height: 100px;
+                
+            }
+
+            .btn-wrapper {
+                display: flex;
+                justify-content: center;
+            }
+
+            .btn-subtmit {
+                margin:20px 0;
+                display:inline-block;
+                width: 25%;
+                font-size: rem(17px);
+                line-height: rem(35px);
+                font-weight: $font-reg;
+                padding: 5px 15px;
+                text-transform: uppercase;
+                border-radius: 5px;
+                background-color: $darkblue;
+                color: $white;
+            }
+
+            .btn-subtmit:hover {
+                background-color: $blue;
+            }
 
         }
     }
 }
+}
 
     .bottomlink {
         position: absolute;
-        bottom:-80px;
+        bottom:-30%;
         left:50%;
         transform: translate(-50%, 0);
         margin-bottom:10px;
+        padding-bottom:10px;
 
         a {
         display: flex;
@@ -50,27 +108,43 @@ footer {
         text-align: center;
         font-size: rem(25px);
         font-weight:600;
-        //color: $white;
         padding: 10px 15px;
+        background-color: $red;
+        border-radius: 10px;
+        color: $white;
 
         span {
             font-size: rem(40px);
             margin-top: 5px;
+            border: 1px solid $white;
+                border-radius: 50px;
                 
         }
         }
+
         a:hover {
             background-color: $darkred;
-            border-radius: 10px;
-            color: $white;
-
-            span {
-                padding: 0;
-                border: 1px solid $white;
-                border-radius: 50px;
-            }
         }
 
-    
     }   
+
+
+.formtext {
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: $softgrey;
+    border: 1.75px solid $darkgrey;
+    color: $black;
+    transition: box-shadow 0.5s ease;
+}
+
+.formtext::placeholder {
+    color: rgba(10, 10, 10, 0.6);
+    font-size: rem(14px);
+}
+
+.formtext:focus {
+    border: 3px solid $darkred;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05), 0 0 8px rgba(95, 6, 6, 0.5);
+    outline:none;
 }
