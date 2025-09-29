@@ -4,9 +4,15 @@ header {
         background-repeat: no-repeat;
         background-position: center;
         height: 100vh;
-        width: 100%;
+        width: 100vw;
         position: relative;
         color: $black;
+        margin-left:-70px;
+
+        @media (min-width: $small) {
+            margin-left:0;
+            width: 100%
+        }
         
 
     .Headerimg {
@@ -47,11 +53,13 @@ header {
         align-items: center;
         text-align: center;
         font-size: rem(25px);
+        line-height: rem(30px);
         font-weight:600;
         padding: 10px 15px;
 
         span {
             font-size: rem(40px);
+            line-height: rem(44px);
             margin-top: 5px;
                 
         }

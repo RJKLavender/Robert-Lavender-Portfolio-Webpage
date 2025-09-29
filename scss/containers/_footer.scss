@@ -1,6 +1,6 @@
 footer {
-    margin: 45px 15%;
-    width:900px;
+    margin: 45px 10px 45px 15px;
+    max-width: 100%;
     padding-inline: 15px;
     position:relative;
     border: 2px solid $border-red;
@@ -8,32 +8,79 @@ footer {
     background: linear-gradient(240deg, rgba(140, 140, 140, 0.4) 0.75%);
     color: $verydarkgrey;
 
+    @media (min-width: $small) {
+        width: 90%;
+        margin: 45px 5%;
+
+    }
+
+
     .contactme {
         display: flex;
         padding: 25px 15px;
-        flex-direction: row;
+        flex-direction: column;
         gap: 20px;
+        width: 100%;
+
+        @media (min-width: $medium) {
+            flex-direction: row;
+        }
 
         .contactdetails {
             display: flex;
              flex-direction: column;
-             width: 110%;
+             width: 100%;
+             
+            @media (min-width: $medium) {
+                width:50%;
+            }
              
         h2 {
             margin-bottom: 25px;
         }
+
         p {
-            font-size: rem(16px);
-            line-height: rem(24px);
-            margin:0 40px 10px 0;
+            margin-top:0;
+            margin-bottom: 10px;
+            font-size: rem(18px);
+            line-height: rem(27px);
+
+            @media (min-width: $large) {
+                margin-right: 30px;
+            }
+
+            .linebreak1 {
+                display:none;
+
+                @media (min-width: $large) {
+                    display:block;
+                }
+            }
+
+            .linebreak2 {
+                display:none;
+
+                @media (min-width: $extralarge) {
+                    display:block;
+                }
+            }
         }
         }
 
         .formbox {
             display:flex;
             align-items:center;
-            justify-content: center;
-            flex-grow: 2;
+            flex-grow: 1;
+            width: 100%;
+
+            @media (min-width: $medium) {
+                width:60%;
+            }
+
+            @media (min-width: $large) {
+                width:50%;
+            }
+
 
         .contactme-form {
             display: flex;
@@ -47,6 +94,7 @@ footer {
 
                 .nametext {
                     margin-top:0;
+                    width:50%;
                 }
             }
             .hidden-label {
@@ -54,10 +102,12 @@ footer {
             }
 
             .formtext {
+                display:inline-flex;
                 margin-top:20px;
             }
             
             .messagetext {
+                display:inline-flex;
                 margin-top:20px;
                 height: 100px;
                 min-height: 100px;
@@ -72,9 +122,8 @@ footer {
             .btn-subtmit {
                 margin:20px 0;
                 display:inline-block;
-                width: 25%;
                 font-size: rem(17px);
-                line-height: rem(35px);
+                line-height: rem(26px);
                 font-weight: $font-reg;
                 padding: 5px 15px;
                 text-transform: uppercase;
@@ -94,11 +143,15 @@ footer {
 
     .bottomlink {
         position: absolute;
-        bottom:-30%;
+        bottom:-20%;
         left:50%;
         transform: translate(-50%, 0);
         margin-bottom:10px;
         padding-bottom:10px;
+
+        @media (min-width: $medium) {
+            bottom:-30%;
+        }
 
         a {
         display: flex;
@@ -109,21 +162,20 @@ footer {
         font-size: rem(25px);
         font-weight:600;
         padding: 10px 15px;
-        background-color: $red;
         border-radius: 10px;
-        color: $white;
+        color: $darkgrey;
 
         span {
             font-size: rem(40px);
             margin-top: 5px;
             border: 1px solid $white;
-                border-radius: 50px;
-                
+            border-radius: 50px;  
         }
         }
 
         a:hover {
             background-color: $darkred;
+            color: $white;
         }
 
     }   

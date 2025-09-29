@@ -8,7 +8,13 @@ body {
 }
 
 .main {
-    margin-left: 250px;
+    margin-left: 70px;
+    margin-right:15px;
+
+    @media (min-width: $small) {
+        margin-left: 250px;
+        margin-right: 0;
+    }
  }
 
 * {
@@ -52,18 +58,22 @@ h1, h2, h3, h4 {
 
 h1 {
     font-size: rem(38px);
+    line-height: rem(46px);
 }
 
 h2 {
     font-size: rem(32px);
+    line-height: rem(38px);
 }
 
 h3 {
     font-size: rem(26px);
+    line-height: rem(31px);
 }
 
 h4 {
     font-size: rem(20px);
+    line-height: rem(24px);
 }
 
 p a:hover, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {
