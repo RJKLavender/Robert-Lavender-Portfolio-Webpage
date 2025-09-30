@@ -26,13 +26,14 @@
 
             border-radius: 3px;
             border: 1px solid $darkgrey;
+            //background-color: rgba(112,66,20, 0.2);
 
             //these media queries adjust the project's width based on screen size
             //on small screens its 1 project per row
             // on medium size screens its 2 projects per row
             // on large size screens its 3 projects per row
             @media (min-width: $small) {
-                width: 80%
+                width: 85%
             }
 
             @media (min-width: $medium) {
@@ -41,28 +42,39 @@
 
             @media (min-width: $large) {
                 width: 30%;
+                
             }
 
         .projectimg {
             width:100%;
             max-width:100%;
             display:block;
-            margin-bottom: 15px;
             text-align: center;
+            border-bottom: 1px solid $darkgrey;
         
         .projectlabel {
             background-color: $sepia;
             position: absolute;
-            top: 5px;
+            top: 10px;
             right: 0;
             color: $white;
-            font-size: rem(10px);
+            font-size: rem(11px);
             font-weight: $font-semibold;
-            padding: 0 10px;
+            padding: 5px 10px;
             line-height: rem(18px);
+            border-radius: 3px 0 0 3px;
             text-transform: uppercase;
             z-index: 1;
+            cursor: pointer;
             }
+
+        .hidden-project {
+            display:none;
+        }
+
+        .projectlabel:hover {
+            text-decoration: underline;
+        }
            
             h2 { 
                 position:absolute;
@@ -70,36 +82,57 @@
                 left:50%;
                 transform:translate(-50%, -50%);
                 width: 250px;
-                line-height: 1.2;
-                font-size: 40px;
+                font-size: rem(36px);
+                line-height: rem(44px);
                 color:$lightgrey;
                 text-shadow: 0px 3px 3px $black;
+                pointer-events: none;
             }
 
             img {
                 display:block;
                 height: auto;
                 width:100%;
-                object-fit: cover;
                 opacity: 0.4;
+
+                @media (min-width: $medium) {
+                    min-height: 270px;
+                }
+
+                @media (min-width: $large) {
+                    min-height: 250px;
+                }
             }
 
         }
 
         .projectinfo {
             display:block;
-            margin-left: 10px;
+            padding-top:10px;
+            padding-left: 15px;
+            color: $darkgrey;
+            background: linear-gradient(240deg, rgba(120, 120, 120, 0.4) 0.75%);
 
+                @media (min-width: $medium) {
+                    min-height: 218px;
+                }
+           
             h2 {
                 margin-top:0;
                 padding-top:5px;
-                font-size: rem(24px);
-                line-height: rem(36px);
+                padding-right: 10px;
+                font-size: rem(22px);
+                line-height: rem(26px);
                 font-weight: $font-semibold;
-                margin-bottom: 15px;
+                margin-bottom: 13px;
+                
             }
             p {
+                font-size: rem(16px);
+                line-height: rem(24px);
                 margin-bottom: 25px;
+                padding-right: 10px;
+                
             }
             .btn-project { 
                 display:inline-flex;
@@ -118,6 +151,11 @@
 
                 span { 
                     margin-left:8px;
+                }
+            }
+            .btn-placeholder {
+                @media (min-width: $medium) {
+                    margin-top:50px;
                 }
             }
 

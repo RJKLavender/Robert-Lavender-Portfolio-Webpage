@@ -4,15 +4,16 @@ body {
     font-family: $encode, sans-serif;
     font-size: $base-font-size;
     line-height: ($base-line-height/$base-font-size); //line height calcuation for the base font outputs 1.5
-    font-weight: $font-reg;   
+    font-weight: $font-reg; 
+    letter-spacing: normal;  
 }
 
 .main {
-    margin-left: 70px;
+    margin-left: 65px;
     margin-right:15px;
 
     @media (min-width: $small) {
-        margin-left: 250px;
+        margin-left: 245px;
         margin-right: 0;
     }
  }
@@ -45,15 +46,15 @@ input {
 }
 
 p {
-    font-size: rem(16px);
-    line-height: rem(24px);
+    margin:0;
+    font-size: rem(17px);
+    line-height: rem(25px);
     font-weight: $font-reg;   
 }
 
 h1, h2, h3, h4 {
     margin:0;
     font-weight: $font-semibold;
-    line-height: rem(20px)
 }
 
 h1 {

@@ -35,15 +35,15 @@ footer {
                 width:50%;
             }
              
-        h2 {
+        h1 {
             margin-bottom: 25px;
         }
 
         p {
             margin-top:0;
             margin-bottom: 10px;
-            font-size: rem(18px);
-            line-height: rem(27px);
+            font-size: rem(19px);
+            line-height: rem(28px);
 
             @media (min-width: $large) {
                 margin-right: 30px;
