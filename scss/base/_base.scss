@@ -8,6 +8,14 @@ body {
     letter-spacing: normal;  
 }
 
+.header {
+    margin-left: 65px;
+
+    @media (min-width: $small) {
+        margin-left: 245px;
+    }
+}
+
 .main {
     margin-left: 65px;
     margin-right:15px;
@@ -16,13 +24,13 @@ body {
         margin-left: 245px;
         margin-right: 0;
     }
- }
+}
 
 * {
     box-sizing: border-box;
 }
 
-//elements
+// Elements
 a {
     cursor: pointer;
     text-decoration:none;
@@ -32,7 +40,7 @@ a:focus {
     outline: thin dotted;
 }
 
-//prevents useragent styling from overriding colour of links
+// Prevents useragent styling from overriding colour of links
 a:link, a:any-link, a:active, a:focus, a:visited {
     color: inherit;
 }
@@ -78,7 +86,8 @@ h4 {
 }
 
 p a:hover, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {
-    text-decoration: underline;
+    text-decoration: $font-style-underline;
+    text-decoration-thickness: 1.25px;
 }
 
 ul {
@@ -94,6 +103,11 @@ small {
     font-weight: $font-light;
 }
 
-span, em {
+span {
     font-weight: $font-med;
+}
+
+em {
+    font-weight: $font-semibold;
+    font-style: normal;
 }

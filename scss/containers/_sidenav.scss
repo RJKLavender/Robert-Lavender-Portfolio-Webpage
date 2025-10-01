@@ -15,7 +15,6 @@
         transition: none;
     }
 
-
     .sidenav-container {
         display: flex;
         flex-direction: column;
@@ -26,69 +25,67 @@
         line-height: rem(20px);
         font-weight: $font-semibold;
         
-    
-    .intials {
-        padding:0 25px;
-        margin: 50px 0;
+        .intials {
+            padding:0 25px;
+            margin: 50px 0;
 
-        a {
-        font-size: rem(50px);
-        line-height: rem(75px);
-        font-weight: $font-bold;
-        display:block;
-        padding: 15px 15px;
-        position:relative;
-        @include lhCrop(1.5); 
-
-        }
-
-        a:hover {
-            background-color: $darkred;
-            border-radius: 10px;
+            a {
+                font-size: rem(50px);
+                line-height: rem(75px);
+                font-weight: $font-bold;
+                display:block;
+                padding: 15px 15px;
+                position:relative;
+                @include lhCrop(1.5); 
             }
-        
-    }
-    .nav-bar {
-        display: flex;
-        flex-direction: column;
-        border-top: 2px solid $border-red;
-        border-bottom: 2px solid $border-red;
 
-        .nav {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            row-gap:25px;
-            padding: 10px 20px 0 20px;
-            margin: 15px 0;
-
-           .navlink {
-                padding: 10px;
-                }
-
-            .navlink:hover {
+            a:hover {
                 background-color: $darkred;
                 border-radius: 10px;
             }
+        
         }
-    }
 
-    .contactnav {
-        padding:20px 0 10px;
-        margin: 10px 0;
-        border-top: 2px solid $border-red;
-       
-        line-height: 1.2;
+        .nav-bar {
+            display: flex;
+            flex-direction: column;
+            border-top: 2px solid $border-red;
+            border-bottom: 2px solid $border-red;
+
+            .nav {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                row-gap:25px;
+                padding: 10px 20px 0 20px;
+                margin: 15px 0;
+
+                .navlink {
+                    padding: 10px;
+                }
+
+                .navlink:hover {
+                    background-color: $darkred;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        .contactnav {
+            padding:20px 0 10px;
+            margin: 10px 0;
+            border-top: 2px solid $border-red;
+            line-height: rem(19px);
+
             .contactlink {
                 padding: 10px;
             }
             .contactlink:hover {
-            background-color: $darkred;
-            border-radius: 10px;
+                background-color: $darkred;
+                border-radius: 10px;
             }
         }
-    
 
         .social-media {
             border-top: 2px solid $border-red;
@@ -101,15 +98,15 @@
             margin:0;
             padding:10px 5px;
 
-            .sociallink {
-                padding: 5px;
-                margin: 0 5px;
-            }
+                .sociallink {
+                    padding: 5px;
+                    margin: 0 5px;
+                }
 
-            .sociallink:hover {
-                border: 1px solid $white;
-                border-radius: 50px;
-            }
+                .sociallink:hover {
+                    border: 1px solid $white;
+                    border-radius: 50px;
+                }
             }
         }
     }
@@ -124,8 +121,8 @@
     position: fixed;
     top: 20px;
     left: 7px;
-    margin-top:0;
-    padding:15px;
+    margin-top: 0;
+    padding: 15px;
     z-index:1;
     border-radius: 8px;
     cursor:pointer;

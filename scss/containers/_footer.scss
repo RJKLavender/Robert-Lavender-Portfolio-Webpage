@@ -11,9 +11,7 @@ footer {
     @media (min-width: $small) {
         width: 90%;
         margin: 45px 5%;
-
     }
-
 
     .contactme {
         display: flex;
@@ -28,43 +26,68 @@ footer {
 
         .contactdetails {
             display: flex;
-             flex-direction: column;
-             width: 100%;
+            flex-direction: column;
+            width: 100%;
              
             @media (min-width: $medium) {
                 width:50%;
             }
              
-        h1 {
-            margin-bottom: 25px;
-        }
-
-        p {
-            margin-top:0;
-            margin-bottom: 10px;
-            font-size: rem(19px);
-            line-height: rem(28px);
-
-            @media (min-width: $large) {
-                margin-right: 30px;
+            h1 {
+                margin-bottom: 25px;
             }
 
-            .linebreak1 {
-                display:none;
+            p {
+                margin-top:0;
+                margin-bottom: 10px;
+                font-size: rem(19px);
+                line-height: rem(28px);
+
+                @media (min-width: $medium) {
+                    margin-right: 10px;
+                }
 
                 @media (min-width: $large) {
-                    display:block;
+                    margin-right: 30px;
+                }
+
+                .linebreak1 {
+                    display:none;
+
+                    @media (min-width: $large) {
+                        display:block;
+                    }
+                }
+
+                .linebreak2 {
+                    display:none;
+
+                    @media (min-width: $extralarge) {
+                        display:block;
+                    }
                 }
             }
 
-            .linebreak2 {
-                display:none;
+            h3 {
+                font-size: rem(21px);
+                line-height: rem(25px);
+                font-weight: $font-med;
 
-                @media (min-width: $extralarge) {
-                    display:block;
+                a:hover {
+                    text-decoration: $font-style-underline;
+                    text-decoration-thickness: 2px;
+                    text-underline-offset: 0.3rem;
+                }
+
+                @media (min-width: $medium) {
+                    margin-right: 10px;
+                }
+
+                @media (min-width: $large) {
+                    margin-right: 30px;
                 }
             }
-        }
+
         }
 
         .formbox {
@@ -74,86 +97,85 @@ footer {
             width: 100%;
 
             @media (min-width: $medium) {
-                width:60%;
-            }
-
-            @media (min-width: $large) {
                 width:50%;
             }
 
+            @media (min-width: $large) {
+                width:40%;
+            }
 
-        .contactme-form {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-
-            .name-wrapper {
+            .contactme-form {
                 display: flex;
-                flex-direction: row;
-                gap:10px;
+                flex-direction: column;
+                width: 100%;
 
-                .nametext {
-                    margin-top:0;
-                    width:50%;
+                .name-wrapper {
+                    display: flex;
+                    flex-direction: row;
+                    gap:10px;
+
+                    .nametext {
+                        margin-top:0;
+                        width:50%;
+                    }
                 }
-            }
-            .hidden-label {
-                display:none;
-            }
 
-            .formtext {
-                display:inline-flex;
-                margin-top:20px;
-            }
+                .hidden-label {
+                    display:none;
+                }
+
+                .formtext {
+                    display:inline-flex;
+                    margin-top:20px;
+                }
             
-            .messagetext {
-                display:inline-flex;
-                margin-top:20px;
-                height: 100px;
-                min-height: 100px;
-                
-            }
+                .messagetext {
+                    display:inline-flex;
+                    margin-top:20px;
+                    height: 100px;
+                    min-height: 100px;
+                }
 
-            .btn-wrapper {
-                display: flex;
-                justify-content: center;
-            }
+                .btn-wrapper {
+                    display: flex;
+                    justify-content: center;
+                }
 
-            .btn-subtmit {
-                margin:20px 0;
-                display:inline-block;
-                font-size: rem(17px);
-                line-height: rem(26px);
-                font-weight: $font-reg;
-                padding: 5px 15px;
-                text-transform: uppercase;
-                border-radius: 5px;
-                background-color: $darkblue;
-                color: $white;
-            }
+                .btn-subtmit {
+                    margin:20px 0;
+                    display:inline-block;
+                    font-size: rem(17px);
+                    line-height: rem(26px);
+                    font-weight: $font-reg;
+                    padding: 5px 15px;
+                    text-transform: uppercase;
+                    border-radius: 5px;
+                    background-color: $darkblue;
+                    color: $white;
+                }
 
-            .btn-subtmit:hover {
-                background-color: $blue;
-            }
+                .btn-subtmit:hover {
+                    background-color: $blue;
+                }
 
+            }
         }
     }
 }
-}
 
-    .bottomlink {
-        position: absolute;
-        bottom:-20%;
-        left:50%;
-        transform: translate(-50%, 0);
-        margin-bottom:10px;
-        padding-bottom:10px;
+.bottomlink {
+    position: absolute;
+    bottom:-20%;
+    left:50%;
+    transform: translate(-50%, 0);
+    margin-bottom:10px;
+    padding-bottom:10px;
 
-        @media (min-width: $medium) {
-            bottom:-30%;
-        }
+    @media (min-width: $medium) {
+        bottom:-30%;
+    }
 
-        a {
+    a {
         display: flex;
         flex-direction:column;
         justify-content: center;
@@ -171,15 +193,14 @@ footer {
             border: 1px solid $white;
             border-radius: 50px;  
         }
-        }
+    }
 
-        a:hover {
-            background-color: $darkred;
-            color: $white;
-        }
+    a:hover {
+        background-color: $darkred;
+        color: $white;
+    }
 
-    }   
-
+}   
 
 .formtext {
     padding: 10px 15px;
