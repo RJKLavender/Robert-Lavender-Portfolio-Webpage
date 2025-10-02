@@ -1,7 +1,9 @@
+//projects styling 
 .my-projects {
     margin: 0 10px 25px;
     padding-top: 15px;
 
+    //set the pojects section to be a flex container so it wraps with screen sizes
     .projects {
         display:flex;
         flex-wrap:wrap;
@@ -37,13 +39,15 @@
                 
             }
 
+            //project img box
             .projectimg {
                 width:100%;
                 max-width:100%;
                 display:block;
                 text-align: center;
                 border-bottom: 1px solid $darkgrey;
-        
+                
+                //little label postioned at top right for code used in project
                 .projectlabel {
                     background-color: $sepia;
                     position: absolute;
@@ -67,7 +71,10 @@
                 .projectlabel:hover {
                     text-decoration: $font-style-underline;
                 }
-           
+
+                
+                //overlay text over project image is postioned so it is centered.
+                //it is styled so it looks embossed over the image
                 h2 { 
                     position:absolute;
                     top:25%;
@@ -87,6 +94,7 @@
                     width:100%;
                     opacity: 0.4;
 
+                    //img heights are adjusted for different screen sizes
                     @media (min-width: $medium) {
                         min-height: 270px;
                     }
@@ -98,6 +106,9 @@
 
             }
 
+            // project description
+            //has its own background colour so it doesnt conflit with imgs background
+            //this box will grow all project cards to the same height based on content
             .projectinfo {
                 display:flex;
                 flex-direction: column;
@@ -105,19 +116,8 @@
                 color: $darkgrey;
                 background: linear-gradient(240deg, rgba(120, 120, 120, 0.4) 0.75%);
                 flex-grow: 1;
-            
-                @media (min-width: $medium) {
-                    min-height:177px;
-                }
-            
-                @media (min-width: $large) {
-                    min-height:177px;
-                }
-
-                @media (min-width: $extralarge) {
-                    min-height: 153px;
-                }
                 
+                //project header
                 h2 {
                     min-width: 0;
                     margin-top:0;
@@ -138,6 +138,7 @@
                 }
             }
 
+            //project link button styling
             .project-btn-box {
                 background: linear-gradient(240deg, rgba(120, 120, 120, 0.4) 0.75%);
                 padding-left: 15px;
@@ -169,6 +170,7 @@
     }
 }
 
+//overlay colour for cards so that the text doesnt conflict with the image
 .overlayproject {
     background: linear-gradient(240deg, rgba(112,66,20, 0.5) .55%);
 }

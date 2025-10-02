@@ -11,13 +11,14 @@ body {
     font-weight: $font-reg; 
     letter-spacing: normal;
     color: $darkgrey;
-    background-color: $offwhite;
+    background-color: $white2;
 }
 
 //header margin adjusts to line up with navigation bar
 .header {
     margin-left: 65px;
 
+    // margin for when the screen has a naviation bar
     @media (min-width: $small) {
         margin-left: 245px;
     }
@@ -25,9 +26,11 @@ body {
 
 //main content margin adjusts for navigation bar and menu button
 .main {
+    //margin so it doesnt overlap with menu button
     margin-left: 65px;
     margin-right:15px;
 
+    // margin for when the screen has a naviation bar
     @media (min-width: $small) {
         margin-left: 245px;
         margin-right: 0;
@@ -38,7 +41,7 @@ body {
     box-sizing: border-box;
 }
 
-// Elements
+// Elements Styling
 a {
     cursor: pointer;
     text-decoration:none;

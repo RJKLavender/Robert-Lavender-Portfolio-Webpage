@@ -1,3 +1,6 @@
+//Footer Styling
+//Within this footer is the contant section including a form
+//doesnt fit with other margins as i wanted it completely centered
 footer {
     margin: 45px 10px 45px 15px;
     max-width: 100%;
@@ -8,11 +11,13 @@ footer {
     background: linear-gradient(240deg, rgba(140, 140, 140, 0.4) 0.75%);
     color: $verydarkgrey;
 
+    //adjusts the margin for the nav bar on bigger screen sizes
     @media (min-width: $small) {
         width: 90%;
         margin: 45px 5%;
     }
 
+    //flex box makes the details on the left and form on the right of the box
     .contactme {
         display: flex;
         padding: 25px 15px;
@@ -23,7 +28,8 @@ footer {
         @media (min-width: $medium) {
             flex-direction: row;
         }
-
+        
+        //listed contact details
         .contactdetails {
             display: flex;
             flex-direction: column;
@@ -42,7 +48,8 @@ footer {
                 margin-bottom: 10px;
                 font-size: rem(19px);
                 line-height: rem(28px);
-
+                
+                // added margin to have cleaner space between details and form
                 @media (min-width: $medium) {
                     margin-right: 10px;
                 }
@@ -51,6 +58,7 @@ footer {
                     margin-right: 30px;
                 }
 
+                //added line breaks to fix text wrapping issues
                 .linebreak1 {
                     display:none;
 
@@ -68,6 +76,7 @@ footer {
                 }
             }
 
+            //this is used to style the email and telephone number so that it is empersized
             h3 {
                 font-size: rem(21px);
                 line-height: rem(25px);
@@ -80,6 +89,7 @@ footer {
                     text-underline-offset: 0.3rem;
                 }
 
+                // added margin to have cleaner space between details and form
                 @media (min-width: $medium) {
                     margin-right: 10px;
                 }
@@ -97,6 +107,7 @@ footer {
             flex-grow: 1;
             width: 100%;
 
+            //form scales with screen size
             @media (min-width: $medium) {
                 width:50%;
             }
@@ -110,6 +121,7 @@ footer {
                 flex-direction: column;
                 width: 100%;
 
+                //form wrapper for first name and last to be on same line
                 .name-wrapper {
                     display: flex;
                     flex-direction: row;
@@ -137,11 +149,13 @@ footer {
                     min-height: 100px;
                 }
 
+                //submit button is cewntered and is inside its own div
                 .btn-wrapper {
                     display: flex;
                     justify-content: center;
                 }
 
+                //button styling similar to the project boxes
                 .btn-subtmit {
                     margin:20px 0;
                     display:inline-block;
@@ -164,6 +178,9 @@ footer {
     }
 }
 
+//Styling for click for top of page button
+//it starts of with no background so it fits nicer
+//postioned always at bottom and center of the form
 .bottomlink {
     position: absolute;
     bottom:-20%;
@@ -172,10 +189,12 @@ footer {
     margin-bottom:10px;
     padding-bottom:10px;
 
+    //adjusts the postioning to be the same on all screen sizes
     @media (min-width: $medium) {
         bottom:-30%;
     }
 
+    //same styling as scroll down button no background
     a {
         display: flex;
         flex-direction:column;
@@ -192,18 +211,24 @@ footer {
         span {
             font-size: rem(30px);
             line-height: rem(36px);
-            border: 1px solid $white;
-            border-radius: 50px;  
+            margin-bottom: 5px;
         }
     }
 
+    //when hovered coloured background appears and puts border around arrow
     a:hover {
         background-color: $darkred;
         color: $white;
+        
+        span {
+            border: 1px solid $white;
+            border-radius: 50px; 
+        }
     }
 
-}   
+}
 
+//styling for the text input boxes in the form
 .formtext {
     padding: 10px 15px;
     border-radius: 5px;
@@ -213,11 +238,13 @@ footer {
     transition: box-shadow 0.5s ease;
 }
 
+//placeholder
 .formtext::placeholder {
     color: rgba(10, 10, 10, 0.6);
     font-size: rem(14px);
 }
 
+//styling for when the box is being typed in
 .formtext:focus {
     border: 3px solid $darkred;
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05), 0 0 8px rgba(95, 6, 6, 0.5);

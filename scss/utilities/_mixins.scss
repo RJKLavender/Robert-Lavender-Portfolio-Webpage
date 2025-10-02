@@ -23,8 +23,11 @@
     }
 }
 
-//fixing space above and below on buttons
+//fixing space above and below text
+//it is used for the intial button so the space above and below are equal when hovered 
+//mixin was adapted from https://medium.com/codyhouse/line-height-crop-a-simple-css-formula-to-remove-top-space-from-your-text-9c3de06d7c6f
 @mixin lhCrop($line-height) {
+    //removes space above text
     &::before {
     content: '';
     display: block;
@@ -33,6 +36,7 @@
     margin-top: calc((1 - #{$line-height}) * 0.8em);
     }
 
+    //removes space below text   
     &::after {
     content: '';
     display: block;

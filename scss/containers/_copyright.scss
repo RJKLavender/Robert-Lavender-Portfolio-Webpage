@@ -1,4 +1,4 @@
-//copyright styling
+//Copyright styling
 .footer {
     margin-top: auto;
     margin-bottom: 15px;
@@ -13,6 +13,7 @@
     }
 
     p {
+        //background and border done here so it doesn't fill page and is small box at the bottom of the page
         background: linear-gradient(90deg, rgba(112,66,20, 0.5) .50%);
         border: 1px solid $border-red;
         border-radius: 10px;
@@ -25,6 +26,7 @@
     }
 }
 
+// adjusts margin so it fits on home page with slightly different margin layout
 .footer-home {
     @media (min-width: $small) {
     margin-left:5%;

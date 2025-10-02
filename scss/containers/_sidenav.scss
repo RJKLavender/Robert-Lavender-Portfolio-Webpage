@@ -1,3 +1,5 @@
+//side nav styling 
+//fixed postion so it doesnt affect scrolling and always stays on left
 .sidebar {
     display: none;
     position:fixed;
@@ -10,11 +12,13 @@
     border-right: 2px solid $border-red;
     transition: left 0.5s ease;
 
+    //only appears on 7806x and up screen sizes and is replaced with menu button in mobile    
     @media (min-width: $small) {
         display:block;
         transition: none;
     }
-
+    // nav bar is styled to flow as a column
+    // all main buttons are styled with no background but it appears when hovered
     .sidenav-container {
         display: flex;
         flex-direction: column;
@@ -25,10 +29,13 @@
         line-height: rem(20px);
         font-weight: $font-semibold;
         
+        //intials are styled as a button sinced it links back to the orginal homepage
+        //intials is centered at the top of the nav bar with equal spacing top and bottomn
         .intials {
             padding:0 25px;
             margin: 50px 0;
 
+            //padding is done so it works with the increased font sized and the header space is removed
             a {
                 font-size: rem(50px);
                 line-height: rem(75px);
@@ -36,6 +43,7 @@
                 display:block;
                 padding: 15px 15px;
                 position:relative;
+                //removes the header space
                 @include lhCrop(1.5); 
             }
 
@@ -46,6 +54,8 @@
         
         }
 
+        //navigation wrapper
+        //borders are lines that do not complete the entire bar above and below each section
         .nav-bar {
             display: flex;
             flex-direction: column;
@@ -72,6 +82,7 @@
             }
         }
 
+        //contact button is seperate so borders work accordingly
         .contactnav {
             padding:20px 0 10px;
             margin: 10px 0;
@@ -87,6 +98,9 @@
             }
         }
 
+        //social media buttons
+        //social media buttons are centered in a row so they present better
+        //social media buttons do not have background colour when hovered they only have a thin border
         .social-media {
             border-top: 2px solid $border-red;
             padding:5px 0 5px;
@@ -112,6 +126,7 @@
     }
 }
 
+//hamburger/menu button styling that only appears on mobile
 .menu {
     display: flex;
     flex-direction: column;
@@ -129,6 +144,7 @@
     transition: left 0.5s ease;
     background-color: $darkgrey;
 
+    //lines of the menu are styled as seperate background colours with 3 sets of spans used to define them
     .hamburgerline {
         width: 100%;
         height: 5px;

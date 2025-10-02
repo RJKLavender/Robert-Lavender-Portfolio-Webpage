@@ -1,3 +1,6 @@
+
+//Content styling for About me, Scs Scheme and Coding Examples Pages
+
 section {
     margin: 50px 0;
     width: 100%;
@@ -8,13 +11,14 @@ section {
     background: linear-gradient(240deg, rgba(120, 120, 120, 0.4) 0.75%);
     color: $verydarkgrey;
 
+    //adjusts margin and box size for larger screen sizes
     @media (min-width: $small) {
         margin: 50px 8%;
         width: 85%;
     }
 
     .content {
-
+        //Main title
 	    h1 {
             font-size: rem(50px);
             line-height: rem(70px);
@@ -23,7 +27,7 @@ section {
             text-align: center;
             text-shadow: 1px 3px 3px $white;
         }
-
+        // Sub titles
         h2 {
             margin-bottom:20px;
             font-weight: $font-semibold;
@@ -36,15 +40,18 @@ section {
             margin-bottom:25px;
         }
 
+        // added width% so it looks readible on all screen sizes
 	    p {
             width:85%;
             margin-bottom:25px;
         }
-    
+
+        // lists are bullet pointed
         ul {
             list-style-type: disc;
         }
 
+        // about me list sets it in two columns
         .skills-list {
             display:flex;
             Flex-direction:row;

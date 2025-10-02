@@ -1,3 +1,5 @@
+//header styling
+//image is set to background img and so that it fills the view point height and across the whole width
 header {
     background-image: url("#{$img-path}/hero.png");
     background-size: cover;
@@ -8,6 +10,7 @@ header {
     color: $black;
     margin-left:-65px;
 
+    //fills whole width onj all screen sizes
     @media (min-width: $small) {
         margin-left:0;
         width: 100%
@@ -21,6 +24,7 @@ header {
         height: 100vh;
         width: 100%;
 
+        //text in center of header
         .headertext {
             text-align: center;
         
@@ -35,17 +39,21 @@ header {
         }
     }
 
+    //scroll down link styling
+    //postioned to always be at the bottom of header
     .scrolllink {
         position: absolute;
         bottom:0;
         left:50%;
         transform: translate(-50%, 0);
         margin-bottom:10px;
-
+        
+        //removes scroll button on small heights
         @media (max-height: 400px) {
             display:none;
         }
         
+        //button is stlyed to have no background untill hovered
         a {
             display: flex;
             flex-direction:column;
@@ -64,6 +72,7 @@ header {
             }
         }
 
+        //when hovered coloured background appears and puts border around arrow
         a:hover {
             background-color: $darkred;
             border-radius: 10px;
@@ -79,6 +88,8 @@ header {
     }
 }
 
+//overlay colour is added to not only match the colour theme but to also make text readible over background
+//I used border-image so it works indepdantly of background-image
 .overlayheader {
     //overlays a sepia colour over the background img
     border-image: linear-gradient(240deg, rgba(112,66,20, 0.5) .55%) fill 1;
