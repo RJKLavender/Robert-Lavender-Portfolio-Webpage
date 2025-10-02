@@ -1,13 +1,20 @@
+//Base Styles
+
+//main body set up
 body {
+    position:relative;
     margin: 0px;
     padding: 0px;
     font-family: $encode, sans-serif;
     font-size: $base-font-size;
     line-height: ($base-line-height/$base-font-size); //line height calcuation for the base font outputs 1.5
     font-weight: $font-reg; 
-    letter-spacing: normal;  
+    letter-spacing: normal;
+    color: $darkgrey;
+    background-color: $offwhite;
 }
 
+//header margin adjusts to line up with navigation bar
 .header {
     margin-left: 65px;
 
@@ -16,6 +23,7 @@ body {
     }
 }
 
+//main content margin adjusts for navigation bar and menu button
 .main {
     margin-left: 65px;
     margin-right:15px;

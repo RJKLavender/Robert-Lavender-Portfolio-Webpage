@@ -1,0 +1,32 @@
+//copyright styling
+.footer {
+    margin-top: auto;
+    margin-bottom: 15px;
+    display:flex;
+    align-items: center;
+    justify-content: left;
+    text-align: center;
+    color: $verydarkgrey;
+
+    @media (min-width: $small) {
+        margin-left: 8%;
+    }
+
+    p {
+        background: linear-gradient(90deg, rgba(112,66,20, 0.5) .50%);
+        border: 1px solid $border-red;
+        border-radius: 10px;
+        padding: 15px;
+
+        small { 
+            font-size: rem(12px);
+            line-height: rem(13px);
+        }
+    }
+}
+
+.footer-home {
+    @media (min-width: $small) {
+    margin-left:5%;
+    }
+}
