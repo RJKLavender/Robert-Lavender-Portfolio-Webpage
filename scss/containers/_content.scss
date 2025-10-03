@@ -44,6 +44,11 @@ section {
 	    p {
             width:85%;
             margin-bottom:25px;
+
+            a:hover {
+                text-decoration: $font-style-underline;
+                text-decoration-thickness: 1.25px;
+            }
         }
 
         // lists are bullet pointed
@@ -66,6 +71,7 @@ section {
 
         a:hover {
             text-decoration: $font-style-underline;
+            text-decoration-thickness: 1.25px;
         }
     }
 }
