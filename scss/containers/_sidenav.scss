@@ -1,22 +1,25 @@
 //side nav styling 
 //fixed postion so it doesnt affect scrolling and always stays on left
 .sidebar {
-    display: none;
     position:fixed;
+    display:block;
+    transform: translateX(-1000px);
     top: 0;
     left: 0;
-    width: 245px;
+    width: 150px;
     height: 100%;
     background-color: $darkgrey;
     color: $offwhite;
     border-right: 2px solid $border-red;
-    transition: left 0.5s ease;
+    transition: transform 0.5s ease;
 
     //only appears on 7806x and up screen sizes and is replaced with menu button in mobile    
     @media (min-width: $small) {
-        display:block;
         transition: none;
+        transform: translateX(0);
+        width:245px;
     }
+
     // nav bar is styled to flow as a column
     // all main buttons are styled with no background but it appears when hovered
     .sidenav-container {
@@ -25,9 +28,14 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        font-size: rem(20px);
-        line-height: rem(20px);
+        font-size: rem(14px);
+        line-height: rem(17px);
         font-weight: $font-semibold;
+
+        @media (min-width: $small) {
+            font-size: rem(20px);
+            line-height: rem(24px);
+        }
         
         //intials are styled as a button sinced it links back to the orginal homepage
         //intials is centered at the top of the nav bar with equal spacing top and bottomn
@@ -68,11 +76,15 @@
                 justify-content: center;
                 align-items: center;
                 row-gap:25px;
-                padding: 10px 20px 0 20px;
+                padding: 10px 5px 0 5px;
                 margin: 15px 0;
 
+                @media (min-width: $small) {
+                    padding: 10px 20px 0 20px;
+                }
+
                 .navlink {
-                    padding: 10px;
+                    padding: 8px;
                 }
 
                 .navlink:hover {
@@ -103,6 +115,7 @@
         //social media buttons do not have background colour when hovered they only have a thin border
         .social-media {
             border-top: 2px solid $border-red;
+            border-bottom: 2px solid $border-red;
             padding:5px 0 5px;
 
             .socials {
@@ -123,6 +136,29 @@
                 }
             }
         }
+
+        .closebar {
+            display:none; 
+            padding:20px 0;
+            margin: 0;
+            border-top: 2px solid $border-red;
+            line-height: rem(19px);
+
+            .closelink {
+                span {
+                    padding: 10px;
+                    span {
+                        margin-right: 3px;
+                    }
+                }
+            }
+
+            .closelink:hover {
+                background-color: $darkred;
+                border-radius: 10px;
+            }
+        }
+          
     }
 }
 
@@ -156,3 +192,10 @@
     }
 }
 
+.menu.close {
+    display:none;
+}
+
+.sidebar.open {
+    transform: translateX(0);
+}

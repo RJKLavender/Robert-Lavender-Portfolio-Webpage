@@ -24,6 +24,10 @@ body {
     }
 }
 
+.header.shift {
+    margin-left: 215px;
+}
+
 //main content margin adjusts for navigation bar and menu button
 .main {
     //margin so it doesnt overlap with menu button
@@ -35,6 +39,11 @@ body {
         margin-left: 245px;
         margin-right: 0;
     }
+}
+
+.main.shift {
+    margin-left: 150px;
+     margin-right:0px;
 }
 
 * {

@@ -1,0 +1,66 @@
+/* Fade in Pugin CSS */
+
+/* Main Visual*/
+.catch{
+    display:none;
+}
+
+/* fades in from left */
+.u-fade-type-left{
+    transform: translateX(-100px);
+    opacity: 0;
+}
+
+
+.u-fade-type-left.is-active{
+    transition: 1s;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* fades in from right */
+.u-fade-type-right{
+    transform: translateX(100px);
+    opacity: 0;
+}
+
+.u-fade-type-right.is-active{
+    transition: 1s;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* fades in from bottom */
+.u-fade-type-down{
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+
+.u-fade-type-down.is-active{
+    transition: 2s;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* fades in from top of page */
+.u-fade-type-up{
+    transform: translateY(-100px);
+    opacity: 0;
+}
+
+.u-fade-type-up.is-active{
+    transition: 2s;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* static fade in */
+.u-fade-type-static{
+    opacity: 0;
+}
+
+.u-fade-type-static.is-active{
+    transition: 2s;
+    opacity: 1;
+}

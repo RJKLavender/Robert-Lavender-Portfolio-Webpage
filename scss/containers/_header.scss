@@ -29,24 +29,45 @@ header {
             text-align: center;
         
             h2 {
-                font-size: rem(40px);
+                font-size: rem(30px);
+                line-height: rem(36px);
+                padding: 5px;
                 margin-bottom: 25px;
+
+                @media (min-width: $small) {
+                    font-size: rem(40px);
+                    line-height: rem(48px);
+                }
             }
 
             h4 {
-                font-size: rem(24px);
+                font-size: rem(20px);
+                line-height: rem(24px);
+                padding: 3px;
+
+                @media (min-width: $small) {
+                    font-size: rem(24px);
+                    line-height: rem(29px);
+                }
             }
+
+
         }
     }
 
     //scroll down link styling
     //postioned to always be at the bottom of header
     .scrolllink {
+        display:none;
         position: absolute;
         bottom:0;
         left:50%;
         transform: translate(-50%, 0);
         margin-bottom:10px;
+
+        @media (min-width: $extrasmall) {
+            display:block;
+        }
         
         //removes scroll button on small heights
         @media (max-height: 400px) {

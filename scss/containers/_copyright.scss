@@ -7,6 +7,7 @@
     justify-content: left;
     text-align: center;
     color: $verydarkgrey;
+    margin-left:3%;
 
     @media (min-width: $small) {
         margin-left: 8%;
@@ -31,4 +32,8 @@
     @media (min-width: $small) {
     margin-left:5%;
     }
+}
+
+.footer.shift {
+   margin-left:5%;
 }

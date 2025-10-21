@@ -2,7 +2,7 @@
 //Within this footer is the contant section including a form
 //doesnt fit with other margins as i wanted it completely centered
 footer {
-    margin: 45px 10px 45px 15px;
+    margin: 45px 15px 45px 15px;
     max-width: 100%;
     padding-inline: 15px;
     position:relative;
@@ -41,13 +41,14 @@ footer {
              
             h1 {
                 margin-bottom: 25px;
+                text-align: center;
             }
 
             p {
                 margin-top:0;
                 margin-bottom: 10px;
-                font-size: rem(19px);
-                line-height: rem(28px);
+                font-size: rem(16px);
+                line-height: rem(24px);
                 
                 // added margin to have cleaner space between details and form
                 @media (min-width: $medium) {
@@ -78,10 +79,15 @@ footer {
 
             //this is used to style the email and telephone number so that it is empersized
             h3 {
-                font-size: rem(21px);
-                line-height: rem(25px);
+                font-size: rem(16px);
+                line-height: rem(19px);
                 font-weight: $font-med;
                 margin-bottom:10px;
+
+                @media (min-width: $small) {
+                    font-size: rem(21px);
+                    line-height: rem(25px);
+                }
 
                 a:hover {
                     text-decoration: $font-style-underline;
@@ -183,12 +189,17 @@ footer {
 //it starts of with no background so it fits nicer
 //postioned always at bottom and center of the form
 .bottomlink {
+    display:none;
     position: absolute;
     bottom:-20%;
     left:50%;
     transform: translate(-50%, 0);
     margin-bottom:10px;
     padding-bottom:10px;
+
+    @media (min-width: $extrasmall) {
+        display:block;
+    }
 
     //adjusts the postioning to be the same on all screen sizes
     @media (min-width: $medium) {

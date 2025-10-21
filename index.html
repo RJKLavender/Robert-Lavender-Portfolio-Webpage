@@ -6,11 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="ROBOTS" content="NOINDEX,NOFOLLOW">
 	<title>Robert Lavender's Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="javascript/fade-in-scroll-load/css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="javascript/jquery-3.7.1.min.js"></script>
 </head>
 <body>
 
 <!--Dropdown Menu-->
+<script defer src="javascript/menu.js"></script>
 <div class="menu">
     <span class="hamburgerline"></span>
     <span class="hamburgerline"></span>
@@ -42,24 +45,30 @@
                     <li><a class="sociallink" href="https://github.com/RJKLavender"><span class="icon-github-square"></span></a></li>
                 </ul>
             </div>
+            
+            <div class="closebar">
+                <a class="closelink"><span><span class="icon-arrow-left"></span>Close Menu</span></a>
+            </div>
         </nav>
     </div>
 </aside>
 
 <!--Header-->
+<script defer src="javascript/scrollto.js"></script>
 <div class="header">
+    <script src="javascript/fade-in-scroll-load/js/script.js"></script>
     <header class="overlayheader">
         <div id="top"></div>
         <!--Hero Image Header-->
         <div class="Headerimg">
-            <div class="headertext">
+            <div class="headertext u-fade-type-down js-window-trigger">
                 <h2>My Name is Robert Lavender</h2>
                 <h4>I'm a Web Developer</h4>
             </div>
         </div>
         <!--Scroll Down Button-->
         <div class="scrolllink">
-            <a href="#portfolio">Scroll Down<span class="icon-keyboard_arrow_down"></span></a>
+            <a id="to-main" href="#portfolio">Scroll Down<span class="icon-keyboard_arrow_down"></span></a>
         </div>
     </header>
 </div>
@@ -88,7 +97,7 @@
             <div class="projectbox">
                 <div class="projectimg">
                     <img class="overlayproject" src="img/placeholder.png" alt="Placeholder Project">
-                    <h2>Placeholder Project</h2>
+                    <h2>Placeholder<br>Project</h2>
                     <span class="projectlabel hidden-project"></span>
                 </div>
                 <div class="projectinfo">
@@ -103,7 +112,7 @@
             <div class="projectbox">
                 <div class="projectimg">
                     <img class="overlayproject" src="img/placeholder.png" alt="Placeholder Project">
-                    <h2>Placeholder Project</h2>
+                    <h2>Placeholder<br> Project</h2>
                     <span class="projectlabel hidden-project"></span>
                 </div>
                 <div class="projectinfo">
@@ -118,7 +127,7 @@
             <div class="projectbox">
                 <div class="projectimg">
                     <img class="overlayproject" src="img/placeholder.png" alt="Placeholder Project">
-                    <h2>Placeholder Project</h2>
+                    <h2>Placeholder<br> Project</h2>
                     <span class="projectlabel hidden-project"></span>
                 </div>
                 <div class="projectinfo">
@@ -148,7 +157,7 @@
             <div class="projectbox">
                 <div class="projectimg">
                     <img class="overlayproject" src="img/placeholder.png" alt="Placeholder Project">
-                    <h2>Placeholder Project</h2>
+                    <h2>Placeholder<br> Project</h2>
                     <span class="projectlabel hidden-project"></span>
                 </div>
                 <div class="projectinfo">
@@ -170,7 +179,7 @@
                 <h1>Contact Me</h1>
                 <p>If you wish to get in contact with me regarding <br class="linebreak2">any projects or questions, then please fill out this form.</p>
                 <p>Alternatively, you can contact me via <br class="linebreak1">my Email or Mobile Number.</p>
-                <h3>My Email: <a href="mailto:robert.lavender@netmatters-scs.com"><wbr>robert.lavender@<wbr>netmatters-scs.com</a></h3>
+                <h3>My Email: <a href="mailto:robert.lavender@netmatters-scs.com"><wbr>robert.lavender<wbr>@netmatters-scs.com</a></h3>
                 <h3>My Mobile Number: <a href="tel:+447534913045"><wbr>07534913045</a></h3>
             </div>
             <!--Contact Form-->
@@ -198,7 +207,7 @@
         </div>
         <!--Back to Top Button-->
         <div class="bottomlink">
-            <a href="#top"><span class="icon-keyboard_arrow_up"></span>Back To Top</a>
+            <a id="to-top" href="#top"><span class="icon-keyboard_arrow_up"></span>Back To Top</a>
         </div>
     </footer>
     <!--Copyright-->
