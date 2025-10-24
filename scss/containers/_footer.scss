@@ -128,6 +128,29 @@ footer {
                 flex-direction: column;
                 width: 100%;
 
+                .form-field {
+                    width:100%;
+                    position: relative;
+
+                    .error {
+                        color: $red;
+                        position: absolute;
+                        top: 5px;
+                        right: 5px;
+                        font-size: rem(28px);
+                    }
+                    .success {
+                        color: $green;
+                        position: absolute;
+                        top: 5px;
+                        right: 5px;
+                        font-size: rem(28px);
+                    }
+                    .error-message {
+                        color: $red;
+                    }
+                }
+
                 //form wrapper for first name and last to be on same line
                 .name-wrapper {
                     display: flex;
@@ -136,7 +159,8 @@ footer {
 
                     .nametext {
                         margin-top:0;
-                        width:50%;
+                        margin-bottom: 20px;
+                        width:100%;
                     }
                 }
 
@@ -146,14 +170,15 @@ footer {
 
                 .formtext {
                     display:inline-flex;
-                    margin-top:20px;
+                    margin-bottom:20px;
+                    width:100%
                 }
             
                 .messagetext {
                     display:inline-flex;
-                    margin-top:20px;
                     height: 100px;
                     min-height: 100px;
+                    width:100%
                 }
 
                 //submit button is cewntered and is inside its own div
@@ -188,6 +213,7 @@ footer {
 //Styling for click for top of page button
 //it starts of with no background so it fits nicer
 //postioned always at bottom and center of the form
+//buton doesn't show on mobile mode
 .bottomlink {
     display:none;
     position: absolute;
@@ -256,9 +282,9 @@ footer {
     font-size: rem(14px);
 }
 
-//styling for when the box is being typed in
-.formtext:focus {
-    border: 3px solid $darkred;
+//styling for when the box is being typed in or hovered over
+.formtext:focus, .formtext:hover {
+    border: 3px solid $darkblue;
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05), 0 0 8px rgba(95, 6, 6, 0.5);
     outline:none;
 }

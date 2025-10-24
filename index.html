@@ -45,7 +45,7 @@
                     <li><a class="sociallink" href="https://github.com/RJKLavender"><span class="icon-github-square"></span></a></li>
                 </ul>
             </div>
-            
+            <!--Close Menu Button-->
             <div class="closebar">
                 <a class="closelink"><span><span class="icon-arrow-left"></span>Close Menu</span></a>
             </div>
@@ -183,22 +183,49 @@
                 <h3>My Mobile Number: <a href="tel:+447534913045"><wbr>07534913045</a></h3>
             </div>
             <!--Contact Form-->
+            <script defer src="javascript/form.js"></script>
             <div class="formbox">
-                <form class="contactme-form">
+                <form id="contact" class="contactme-form">
                     <div class="name-wrapper">
-                        <label for="forname" class="hidden-label">First Name*</label>
-                        <input id="forname" class="forname nametext formtext" name="forname" placeholder="First Name*" type="text">
-                        <label for="surname" class="hidden-label">Last Name*</label>
-                        <input id="surname" class="surname nametext formtext" name="surname" placeholder="Last Name*" type="text">
+                        <div class="form-field">
+                            <label for="forname" class="hidden-label">First Name</label>
+                            <input id="forname" class="forname nametext formtext" name="forname" placeholder="First Name*" type="text" required>
+                            <span class="error-message hidden"></span>
+                            <span class="hidden error icon-exclamation-circle"></span>
+                            <span class="hidden success icon-check-circle"></span>
+                        </div><div class="form-field">
+                            <label for="surname" class="hidden-label">Last Name</label>
+                            <input id="surname" class="surname nametext formtext" name="surname" placeholder="Last Name*" type="text" required>
+                            <span class="error-message hidden"></span>
+                            <span class="hidden error icon-exclamation-circle"></span>
+                            <span class="hidden success icon-check-circle"></span>
+                        </div>
                     </div>
-                    <label for="email" class="hidden-label">Email Address*</label>
-                    <input id="email" class="email formtext" name="email" placeholder="Email Address*" type="email">
-                    <label for="phone" class="hidden-label">Telephone Number*</label>
-                    <input id="phone" class="phone formtext" name="phone" placeholder="Telephone Number*" type="tel">
-                    <label for="subject" class="hidden-label">Subject</label>
-                    <input id="subject" class="subject formtext" name="subject" placeholder="Subject" type="text">
-                    <label for="message" class="hidden-label">Message</label>
-                    <textarea id="message" class="message messagetext formtext" name="messege" placeholder="Message"></textarea>
+                    <div class="form-field">
+                        <label for="email" class="hidden-label">Email Address</label>
+                        <input id="email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" class="email formtext" name="email" placeholder="Email Address*" type="email" required>
+                        <span class="error-message hidden"></span>
+                        <span class="hidden error icon-exclamation-circle"></span>
+                        <span class="hidden success icon-check-circle"></span>
+                    </div><div class="form-field">
+                        <label for="phone" class="hidden-label">Telephone Number</label>
+                        <input id="phone" pattern="^(\+44\s?\(?(?:1\d{1,4}|7\d{3})\)?|\(?(?:0\d{1,4}|07\d{3})\)?)\s?\d{3,8}$" class="phone formtext" name="phone" placeholder="Telephone Number*" type="tel" required>
+                        <span class="error-message hidden"></span>      
+                        <span class="hidden error icon-exclamation-circle"></span> 
+                        <span class="hidden success icon-check-circle"></span>
+                    </div><div class="form-field">
+                        <label for="subject" class="hidden-label">Subject</label>
+                        <input id="subject" class="subject formtext" name="subject" placeholder="Subject*" type="text" required>
+                        <span class="error-message hidden"></span>
+                        <span class="hidden error icon-exclamation-circle"></span>
+                        <span class="hidden success icon-check-circle"></span>
+                    </div><div class="form-field">
+                        <label for="message" class="hidden-label">Message</label>
+                        <textarea id="message" class="message messagetext formtext" name="message" placeholder="Message*" required></textarea>
+                        <span class="error-message hidden"></span>
+                        <span class="hidden error icon-exclamation-circle"></span>
+                        <span class="hidden success icon-check-circle"></span>
+                    </div>
                     <div class="btn-wrapper">
                         <button type="submit" id="submit" class="btn-subtmit">Submit</button>
                     </div>

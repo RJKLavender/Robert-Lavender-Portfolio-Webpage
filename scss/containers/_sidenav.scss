@@ -1,5 +1,6 @@
 //side nav styling 
 //fixed postion so it doesnt affect scrolling and always stays on left
+// it is set off screen so it can smoothly transition when menu and close button are clicked
 .sidebar {
     position:fixed;
     display:block;
@@ -138,17 +139,19 @@
         }
 
         .closebar {
-            display:none; 
+            display:none;
             padding:20px 0;
             margin: 0;
             border-top: 2px solid $border-red;
             line-height: rem(19px);
-
+            
             .closelink {
+                padding: 10px;
+
                 span {
-                    padding: 10px;
                     span {
-                        margin-right: 3px;
+                        margin-right: 5px;
+                        line-height: inherit;
                     }
                 }
             }
@@ -192,10 +195,12 @@
     }
 }
 
+//when menu is opened it sets the hamburger button to display none
 .menu.close {
     display:none;
 }
 
+//when hamburger button is clicked the menu is displayed
 .sidebar.open {
     transform: translateX(0);
 }

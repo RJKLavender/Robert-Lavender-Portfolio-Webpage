@@ -24,6 +24,7 @@ body {
     }
 }
 
+//margin of header shifts when menu is displayed spo it lines up on mobile mode
 .header.shift {
     margin-left: 215px;
 }
@@ -41,9 +42,9 @@ body {
     }
 }
 
+//margin of all main content shifts when menu is displayed on mobile mode
 .main.shift {
     margin-left: 150px;
-     margin-right:0px;
 }
 
 * {
@@ -130,4 +131,9 @@ span {
 em {
     font-weight: $font-semibold;
     font-style: normal;
+}
+
+//hides element can be removed with js
+.hidden {
+    display:none;
 }
