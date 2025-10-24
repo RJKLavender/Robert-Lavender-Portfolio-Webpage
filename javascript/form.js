@@ -69,11 +69,7 @@ const validateformField = formfield => {
     }
     
     // spose to check for each element if the blur event is triggered
-    Array.from(form.elements).forEach(element => {
-    element.addEventListener('blur', (event) => {
-        validateformField(event.srcElement.parentElement);
-    });
-});
+
 
 };
 
@@ -85,6 +81,8 @@ const validateFormFields = formToValidate => {
         validateformField(formField);
     });
     
+    // if (each formfield is true)
+    //trigger submit event
 };
 
 //when submitted check if errors found by validation function then stop submit.
@@ -93,6 +91,12 @@ const validateFormFields = formToValidate => {
         validateFormFields(form);
     });
 
+    Array.from(form.elements).forEach(element => {
+    element.addEventListener('blur', (event) => {
+        validateformField(event.srcElement.parentElement);
+    });
+    
+});
 };
 
 validateForm();
