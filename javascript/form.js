@@ -89,8 +89,8 @@ const validateFormFields = formToValidate => {
 
 //when submitted check if errors found by validation function then stop submit.
     form.addEventListener('submit', (e) => {
-        validateFormFields(form);
         e.preventDefault();
+        validateFormFields(form);
     });
 
 };
