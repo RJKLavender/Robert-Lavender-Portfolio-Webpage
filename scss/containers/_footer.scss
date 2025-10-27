@@ -1,4 +1,5 @@
 //Footer Styling
+
 //Within this footer is the contant section including a form
 //doesnt fit with other margins as i wanted it completely centered
 footer {
@@ -132,6 +133,7 @@ footer {
                     width:100%;
                     position: relative;
 
+                    //erorr and sucess icon styling setting the icon to be at the top right of each nform field
                     .error {
                         color: $red;
                         position: absolute;
@@ -146,6 +148,8 @@ footer {
                         right: 5px;
                         font-size: rem(28px);
                     }
+
+                    // error messege styling to sit below the form field
                     .error-message {
                         color: $red;
                     }

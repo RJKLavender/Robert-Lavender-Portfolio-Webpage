@@ -1,4 +1,5 @@
 //header styling
+
 //image is set to background img and so that it fills the view point height and across the whole width
 header {
     background-image: url("#{$img-path}/hero.png");
@@ -50,8 +51,6 @@ header {
                     line-height: rem(29px);
                 }
             }
-
-
         }
     }
 
