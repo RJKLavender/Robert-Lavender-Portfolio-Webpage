@@ -47,6 +47,17 @@ section {
                 text-decoration: $font-style-underline;
                 text-decoration-thickness: 1.25px;
             }
+
+            strong {
+                font-size: rem(20px);
+                line-height: rem(27px);
+            }
+        }
+
+        // used to give margin between coding examples
+        .line-break::before {
+            content: '';
+            margin: 10px 0;
         }
 
         // lists are bullet pointed
